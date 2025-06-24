@@ -1,59 +1,221 @@
-h1{
+h1 {
     margin-top: 7vh;
-     display: flex;
-    justify-content: center;
-}
-
-.counter{
-
-
- margin-top: 4vh;
- border: 0.3vh  solid #ccc ;
- padding: 2vh;
- width: 170vh;
- margin-left: 20vh;
- border-radius: 0.5vh;
- 
-
-
-}
-
-.inputCounter{
     display: flex;
     justify-content: center;
-
-
-
 }
 
-.warning{
+.butooncontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    width: 40vh;
+    height: 4vh;
+    background-color: #0da2c0;
+    border: 0.5vh solid #0da2c0;
+    border-radius: 0.5vh;
+    color: white;
+}
+
+.Deletcontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.deletbutton {
+    width: 90vh;
+    height: 4vh;
+    background-color: #f88;
+    border: 0.5vh solid #f88;
+    border-radius: 0.5vh;
+    color: white;
+}
+
+.scrollContainer {
+    height: 40vh;
+    overflow-y: auto;
+    margin-top: 2vh;
+    padding: 1vh;
+}
+
+.task-item {
+    height: 4vh;
+    border: 0.3vh solid #ccc;
+    padding: 0.5vh 1vh;
+    margin-bottom: 1vh;
+    border-radius: 0.5vh;
+    background-color: white;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.scrollContainer h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+    background-color: white;
+}
+
+.taskText {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 2vh;
+    padding-left: 2vh;
+}
+
+.Action {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.done {
+    width: 2vh;
+    height: 2vh;
+}
+
+.edit,
+.Delet {
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+}
+
+#editpopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+
+.inputedit {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2vh 5vh;
+    margin: 3vh 0;
+    font-size: 2vh;
+    border: 0.5vh solid #ccc;
+    border-radius: 1vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+}
+
+.save {
+    background-color: #17a2b6;
+    color: white;
+    border: none;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    width: 7vh;
+    height: 3vh;
+    border-radius: 1vh;
+}
+
+.delet {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 8vh;
+    height: 3vh;
+    border-radius: 1vh;
+}
+
+#deletpopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+
+.inputdelet {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2vh 5vh;
+    margin: 3vh 0;
+    font-size: 2vh;
+    border: 0.5vh solid #ccc;
+    border-radius: 1vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+}
+
+.confirm {
+    background-color: rgb(194, 192, 192);
+    color: black;
+    border: none;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    width: 8vh;
+    height: 3vh;
+    border-radius: 1vh;
+}
+
+#InputButton {
+    margin-left: 7.5vh;
+    margin-top: 2vh;
+    width: 155.5vh;
+    padding: 0.5vh;
+    background-color: #0da2c0;
+    color: white;
+}
+
+.counter {
+    margin-top: 4vh;
+    border: 0.3vh solid #ccc;
+    padding: 2vh;
+    width: 170vh;
+    margin-left: 20vh;
+    border-radius: 0.5vh;
+}
+
+.inputCounter {
+    display: flex;
+    justify-content: center;
+}
+
+.warning {
     color: red;
     display: none;
-   margin-left: 7vh;
-
+    margin-left: 7vh;
 }
 
-.inputIcon{
-   width: 32px;
-  height: 32px;
-  background-color: #0da2c0;
-  padding: 0.50vh;
-  border-radius: 4px;
-
+.inputIcon {
+    width: 32px;
+    height: 32px;
+    background-color: #0da2c0;
+    padding: 0.5vh;
+    border-radius: 4px;
 }
 
-#mainInput{
-
+#mainInput {
     width: 150vh;
     border-radius: 4px;
     border: 1px solid #ccc;
-}
-
- #InputButton{
-    margin-left: 7.5vh;
-   margin-top: 2vh;
-   width: 155.5vh;
-padding: 0.50vh;
- background-color: #0da2c0;
-color: white;
 }
