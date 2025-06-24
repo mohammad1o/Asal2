@@ -41,4 +41,14 @@ h1{
 
 
     }
-    
+.task-item {
+  height: 4vh;
+  border: 0.3vh solid #ccc;
+  padding: 0.5vh 1vh;
+  margin-bottom: 1vh;
+  border-radius: 0.5vh;
+  background-color: white;
+  display: flex;
+  align-items:end ;
+  justify-content: space-between;
+}
