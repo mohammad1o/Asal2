@@ -223,3 +223,11 @@ const deletall=()=>{
     changecolor();
     
 };
+const changecolor2=()=>{
+     if(tasks.length>0){
+        BtdeletAll.style.backgroundColor="#D70000";
+    }
+    else{
+        BtdeletAll.style.backgroundColor = "#f88"; 
+    }
+};
