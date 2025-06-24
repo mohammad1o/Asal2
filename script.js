@@ -246,3 +246,9 @@ for (let i = 0; i < filterButtons.length; i++) {
     }
   });
 }
+document.getElementById("InputButton").onclick=getinput;
+document.getElementById("All").onclick=showTaskInList;
+document.getElementById("Done").onclick=DoneTask;
+document.getElementById("ToDo").onclick=ToDoTask;
+document.getElementById("deletDone").onclick=deletdontask;
+document.getElementById("deletAll").onclick=deletall;
