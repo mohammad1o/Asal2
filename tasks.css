@@ -28,6 +28,7 @@ h1{
 
 .warning{
     color: red;
-   
+    display: none;
+   margin-left: 7vh;
 
 }
