@@ -231,3 +231,18 @@ const changecolor2=()=>{
         BtdeletAll.style.backgroundColor = "#f88"; 
     }
 };
+const filterButtons = [BtDone, BtToDo, Btall];
+let activeButton = null;
+for (let i = 0; i < filterButtons.length; i++) {
+  filterButtons[i].addEventListener("click", function() {
+    if (activeButton !== this) {
+      if (activeButton) {
+        activeButton.style.backgroundColor = "";
+        activeButton.style.transform = "translateY(0)";
+      }
+      this.style.backgroundColor = "#006d82";
+      this.style.transform = "translateY(-5px)";
+      activeButton = this;
+    }
+  });
+}
