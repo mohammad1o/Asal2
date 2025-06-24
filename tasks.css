@@ -165,3 +165,12 @@ h1{
   border: 0.5vh solid #ccc;
   border-radius: 1vh;
 }
+
+.confirm{
+    background-color: rgb(194, 192, 192);
+    color:black;
+     border: none;
+    margin-top: 2vh;
+    margin-right: 2vh;
+
+}
