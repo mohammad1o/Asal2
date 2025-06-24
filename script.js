@@ -92,3 +92,40 @@ const creatElement=(task)=>{
         deletBT.onclick=()=>openpopDelet(task);
     return creat;        
 };
+//this is function to show the input  in scrollContainer in HTML
+const showTaskInList=()=>{
+    let container=document.getElementById("scrollContainer");
+    container.innerHTML="";
+     if(tasks.length === 0){
+        container.innerHTML = "<h3>No Tasks!</h3>";
+        return;
+    }
+    for(let i=0;i<tasks.length;i++)
+    {
+       let task=tasks[i];
+        container.appendChild(creatElement(task));
+    }
+
+};
+
+const openpopedit=(task)=>{
+    newEdit=task;
+    editInput.value=task.text;
+    editpupop.style.display="flex";
+   
+};
+
+saveBt.onclick=()=>
+{
+    let NewText=editInput.value;
+    if(NewText!="" && NewText.length>5 && isNaN(NewText.charAt(0)) )
+    {
+        newEdit.text=NewText;
+        editpupop.style.display="none";
+        showTaskInList();
+    }
+
+};
+CancelBt1.onclick=()=>{
+    editpupop.style.display="none";
+}
