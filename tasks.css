@@ -176,3 +176,9 @@ h1{
     height: 3vh;
     border-radius: 1vh;
 }
+.delet{
+    background-color: red;
+    color: white;
+    border: none;
+
+}
