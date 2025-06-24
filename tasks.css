@@ -32,4 +32,13 @@ h1{
     border:0.5vh solid #f88;
     border-radius: 0.5vh;
     color: white;
-}s
+}
+ .scrollContainer {
+      height: 40vh;
+      overflow-y: auto;
+      margin-top: 2vh;
+      padding: 1vh;
+
+
+    }
+    
