@@ -216,3 +216,10 @@ const changecolor=()=>{
     }
 
 };
+const deletall=()=>{
+    tasks=[];
+    showTaskInList();
+    changecolor2();
+    changecolor();
+    
+};
