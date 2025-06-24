@@ -67,3 +67,28 @@ const getinput =()=>{//arrow function
     showTaskInList();
     
 };
+const creatElement=(task)=>{
+    let template=document.getElementById("taskTemp");
+       let creat = template.content.cloneNode(true); //to git copy from all elemnet of temp.
+
+         //queryselector to find a id from a templet .
+       let checkbox = creat.querySelector(".done"); 
+        let textTask = creat.querySelector(".taskText");
+        let editBt = creat.querySelector("img.edit");
+        let deletBT = creat.querySelector(".Delet");
+
+        textTask.textContent = task.text;
+        checkbox.checked = task.done;
+        if (task.done) {
+            textTask.style.textDecoration = "line-through";
+            textTask.style.color = "red";
+        }
+        checkbox.onchange=()=>{
+            task.done=checkbox.checked;
+            showTaskInList();
+            changecolor();
+        };
+        editBt.onclick=()=>openpopedit(task);
+        deletBT.onclick=()=>openpopDelet(task);
+    return creat;        
+};
