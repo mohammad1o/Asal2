@@ -73,3 +73,8 @@ h1{
   font-size: 2vh;
   padding-left: 2vh;
 }
+.Action {
+  display: flex;
+  align-items: center;
+  gap: 1vh; 
+}
