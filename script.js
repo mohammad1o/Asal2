@@ -134,3 +134,14 @@ const openpopDelet=(task)=>{
     deletpopup.style.display="flex";
 
 };
+confirmBt.onclick=()=>{
+    let index=tasks.indexOf(makeDelete);
+    if(index!==-1)
+    {
+        tasks.splice(index,1);
+    }
+    deletpopup.style.display="none";
+    showTaskInList();
+    changecolor();
+    changecolor2();
+};
