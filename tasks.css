@@ -24,3 +24,12 @@ h1{
     justify-content: space-around;
 
 }
+.deletbutton
+{
+     width: 90vh;
+    height: 4vh;
+    background-color:#f88;
+    border:0.5vh solid #f88;
+    border-radius: 0.5vh;
+    color: white;
+}s
