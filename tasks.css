@@ -3,3 +3,9 @@ h1{
     display: flex;
     justify-content: center;
 }
+.butooncontainer
+{
+    display: flex;
+    justify-content: space-around;
+
+}
