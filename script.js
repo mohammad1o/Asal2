@@ -182,3 +182,16 @@ const ToDoTask=()=>{
         container.innerHTML="<h3>NO TASKS DONE!<h3>";
     }
 };
+const deletdontask=()=>{
+    
+    for(let i =tasks.length-1;i>=0;i--)
+    {
+        if(tasks[i].done==true)
+            tasks.splice(i,1);
+        
+    }
+    showTaskInList();
+    changecolor();
+    changecolor2();
+
+};
