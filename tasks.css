@@ -1,0 +1,59 @@
+h1{
+    margin-top: 7vh;
+     display: flex;
+    justify-content: center;
+}
+
+.counter{
+
+
+ margin-top: 4vh;
+ border: 0.3vh  solid #ccc ;
+ padding: 2vh;
+ width: 170vh;
+ margin-left: 20vh;
+ border-radius: 0.5vh;
+ 
+
+
+}
+
+.inputCounter{
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.warning{
+    color: red;
+    display: none;
+   margin-left: 7vh;
+
+}
+
+.inputIcon{
+   width: 32px;
+  height: 32px;
+  background-color: #0da2c0;
+  padding: 0.50vh;
+  border-radius: 4px;
+
+}
+
+#mainInput{
+
+    width: 150vh;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+ #InputButton{
+    margin-left: 7.5vh;
+   margin-top: 2vh;
+   width: 155.5vh;
+padding: 0.50vh;
+ background-color: #0da2c0;
+color: white;
+}
