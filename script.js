@@ -195,3 +195,24 @@ const deletdontask=()=>{
     changecolor2();
 
 };
+const changecolor=()=>{
+    let check2=false;
+   
+    for(let i=0;i<tasks.length;i++)
+    {
+        if(tasks[i].done)
+        {
+            check2=true;
+            break;
+            
+        }
+    }
+    if(check2==true){
+        BtdeletDone.style.backgroundColor="#D70000";
+    }
+    else
+    {
+        BtdeletDone.style.backgroundColor="#f88";
+    }
+
+};
