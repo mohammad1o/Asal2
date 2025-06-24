@@ -169,8 +169,10 @@ h1{
 .confirm{
     background-color: rgb(194, 192, 192);
     color:black;
-     border: none;
+    border: none;
     margin-top: 2vh;
     margin-right: 2vh;
-
+    width: 8vh;
+    height: 3vh;
+    border-radius: 1vh;
 }
