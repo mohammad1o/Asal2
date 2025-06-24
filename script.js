@@ -145,3 +145,24 @@ confirmBt.onclick=()=>{
     changecolor();
     changecolor2();
 };
+CancelBt2.onclick=()=>{
+    deletpopup.style.display="none";
+};
+
+const DoneTask=()=>{
+    let container=document.getElementById("scrollContainer");
+    container.textContent="";
+    let check=false;
+    for(let i=0 ; i<tasks.length;i++)
+    {
+        let task=tasks[i];
+        if(task.done){
+            container.appendChild(creatElement(task));
+            check=true;
+        }
+    }
+    if(check!==true){
+        container.innerHTML="<h3>NO TASKS DONE!<h3>";
+    }
+
+};
