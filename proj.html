@@ -7,17 +7,33 @@
     <link rel="stylesheet" href="tasks.css">
 </head>
 <body>
+<section class="container">
+
     <h1>To Do List</h1>
+
+    <div class="counter">
+        <div class="inputCounter">
+            <img class="inputIcon" src="./book-solid-svgrepo-com.svg">
+            <input id="mainInput" placeholder="New Todo">
+        </div>
+
+        <div class="warning" id="warning">Task Cannot Be Empty!</div>
+        <div class="warning" id="warning1">Task Cannot Start With Number!</div>
+        <div class="warning" id="warning2">Task Must Be At Least 5 Characters!</div>
+
+        <button id="InputButton">Add New Task</button>
+    </div>
+
     <div class="butooncontainer">
         <button class="button" id="All">All</button>
         <button class="button" id="Done">Done</button>
         <button class="button" id="ToDo">ToDo</button>
-
     </div>
-     <div class="scrollContainer" id="scrollContainer">
-        <h3 id="noTasksHeader">NO TASKS!</h3> 
 
+    <div class="scrollContainer" id="scrollContainer">
+        <h3 id="noTasksHeader">NO TASKS!</h3>
     </div>
+
     <template id="taskTemp">
         <div class="task-item">
             <span class="taskText"></span>
@@ -28,22 +44,22 @@
             </div>
         </div>
     </template>
-        <div class="Deletcontainer" >
-            <button class="deletbutton" id="deletDone">Delete Done Taske</button>
-            <button class="deletbutton" id="deletAll">Delete All Taske</button>
 
-        </div>
+    <div class="Deletcontainer">
+        <button class="deletbutton" id="deletDone">Delete Done Tasks</button>
+        <button class="deletbutton" id="deletAll">Delete All Tasks</button>
     </div>
+
     <div id="editpopup">
-    <div class="inputedit">
-        <h3>Rename Task</h3>
-        <input class="text" type="text" id="editInput">
-        <br>
-        <button class="save" id="saveBt">Save</button>
-        <button class="delet" id="CancelBt1">Cancel</button>
-
+        <div class="inputedit">
+            <h3>Rename Task</h3>
+            <input class="text" type="text" id="editInput">
+            <br>
+            <button class="save" id="saveBt">Save</button>
+            <button class="delet" id="CancelBt1">Cancel</button>
         </div>
     </div>
+
     <div id="deletpopup">
         <div class="inputdelet">
             <h3>Delete Task</h3>
@@ -51,11 +67,11 @@
             <br>
             <button class="confirm" id="confirmBt">Confirm</button>
             <button class="delet" id="CancelBt2">Cancel</button>
-
         </div>
     </div>
-</div>
-<script src="script.js"></script>
 
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
