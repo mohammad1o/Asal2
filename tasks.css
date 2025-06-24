@@ -45,5 +45,6 @@ h1{
 #mainInput{
 
     width: 150vh;
-   
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
