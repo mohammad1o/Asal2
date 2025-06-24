@@ -180,5 +180,7 @@ h1{
     background-color: red;
     color: white;
     border: none;
+    width: 8vh;
+    height: 3vh;
 
 }
