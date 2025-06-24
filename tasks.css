@@ -162,5 +162,6 @@ h1{
   padding: 2vh 5vh;
   margin: 3vh 0;
   font-size: 2vh;
-
+  border: 0.5vh solid #ccc;
+  border-radius: 1vh;
 }
