@@ -57,3 +57,13 @@ h1{
     justify-content: center;
 
 }
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 1vh;
+  margin-bottom: 1vh;
+  background-color: white;
+}
