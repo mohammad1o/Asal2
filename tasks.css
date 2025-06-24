@@ -128,3 +128,13 @@ h1{
     border-radius: 1vh;
 
 }
+.delet{
+    background-color: red;
+    color: white;
+    border: none;
+     width: 7vh;
+    height: 3vh;
+     border-radius: 1vh;
+
+
+}
