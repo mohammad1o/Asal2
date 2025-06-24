@@ -67,3 +67,9 @@ h1{
   margin-bottom: 1vh;
   background-color: white;
 }
+.taskText {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 2vh;
+  padding-left: 2vh;
+}
