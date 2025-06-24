@@ -129,3 +129,8 @@ saveBt.onclick=()=>
 CancelBt1.onclick=()=>{
     editpupop.style.display="none";
 }
+const openpopDelet=(task)=>{
+    makeDelete=task;
+    deletpopup.style.display="flex";
+
+};
