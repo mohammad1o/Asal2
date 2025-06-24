@@ -116,3 +116,15 @@ h1{
  
 
 }
+.save{
+    background-color: #17a2b6;
+    color: white;
+     border: none;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    width: 7vh;
+    height: 3vh;
+
+    border-radius: 1vh;
+
+}
